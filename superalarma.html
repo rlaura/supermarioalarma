@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alarma de SuperMario</title>
+	<meta charset="utf-8">
+<link rel="icon" href="img/mario.ico" type="image/x-icon"/>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+<div id="container">
+	<img class="fondo" src="img/marioad.png">
+	<img class="fondo2" src="img/boss.png">
+
+	<div>
+		<h1>Super Alarma</h1>
+		<div class="horaActual">Hora actual:</div>
+		<div class="horaActual" id="reloj"></div>		
+		<p>¿A qué hora te despierto?</p>
+		
+	</div>
+	<div class="desperta">
+ 		<input type="number" id="hora" min="00" max="23">
+ 		<span class="separador">:</span>
+ 		<input type="number" id="minuto" min="00" max="59" >
+ 		<p id="saludo"></p>
+	</div>
+</div>
+
+<div id="alert" class="cubierta">
+	<img src="img/nube.png" class="nube"><img src="img/nube.png" class="nube2">
+	<button class="cerrar" onclick="cerrar()">X</button>
+	<p id="texto-alert">¡HORA DE LEVANTARSE!</p>
+
+	<img src="img/hongo.png" class="hongo" >
+	<footer></footer>
+
+</div>
+
+<footer>
+	<a href="https://github.com/rlaura/" target="_blank">
+	   <img src="img/github.png"></a>
+
+	<a href="https://www.linkedin.com/in/laurarivero/" target="_blank">
+		<img src="img/linkedin.png">
+	</a>
+</footer>
+<audio id="alarma-mp3">
+  <source src="mp3/mario.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<script type="text/javascript" src="js/alarma.js"></script>
+</body>
+</html>

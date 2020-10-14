@@ -1,0 +1,174 @@
+/* Cargo font de Super Mario */
+@font-face{
+  font-family: "mario";
+  src: url("../fonts/mario.ttf");
+}
+
+body {
+	margin: 0;
+}
+
+h1 {
+	padding: 15px;
+	margin: 0;
+	font-size: 100px;
+	font-family: mario;
+}
+
+/* Estilo del DIV donde se encuentra el título, el reloj y la alarma */
+#container {
+	background: blue;
+	background: linear-gradient(to bottom, #87CEFA 0%, #78BFEB 100%);
+	
+	color: red;
+	height: 90vh;
+	margin-left: auto;
+	margin-right: auto;
+	
+	text-align: center;
+
+	display: flex;
+	justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+#container p {
+	font-size: 25px;
+}
+
+
+/* Ubicación de Mario */
+.fondo {
+	position: fixed;
+	width: 350px;
+	right: 0;
+}
+/* Ubicación del Boss */
+.fondo2 {
+	position: fixed;
+	width: 450px;
+	bottom: 15px;
+}
+
+/* Alarma */ 
+.horaActual {
+	font-size: 35px;
+	padding-bottom: 15px;
+	display: inline-block;
+}
+
+.separador {
+	font-size: 55px;
+}
+
+
+/* Modifico el estilo de los input */
+input {
+	width: 75px;
+	height: 50px;
+	font-size: 35px;
+	border-radius: 15px;
+	
+}
+
+/* Footer */
+footer {
+	bottom: 0;
+	/* Pongo un background gradiant que asemeja al pasto y la tierra con un pequeño borde más oscuro */
+	background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(43,172,2,1) 100%);
+	border-top: 3px solid green;
+
+	height: 61px;
+	text-align: center;
+	font-size: 25px;
+
+	display: flex;
+	justify-content: center;
+	align-content: center;
+
+	padding-top: 10px;
+	}
+
+/* Tamaño y ubicación de los íconos de redes */
+footer img {
+	width: 35px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+/*  cartel alarma */
+.cubierta {
+	position: absolute;
+	text-align: center;
+	background: linear-gradient(to bottom, #87CEFA 0%, #78BFEB 100%);
+	border: 8px dashed orange;
+	border-style: double;
+	border-radius: 15px;
+	width: 30%;
+	height: 35%;
+	top: 25%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+	
+	font-size: 35px;
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    color: blue;
+
+}
+
+#alarma {
+	margin-top: 15px;
+}
+	
+#alert {
+	visibility: hidden;
+}
+	
+
+.hongo {
+	width: 75px;
+}	
+
+.nube{ 
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 110px;
+	height: 45px;
+ }
+ .nube2 {
+ 	position: absolute;
+	top: 5px;
+	right: 15px;
+	width: 110px;
+	height: 45px;
+ }
+
+.cerrar {
+	width: 25px;
+	margin-left: 90%;
+	position: absolute;
+	top: 3%;
+	font-weight: 600;
+	background-color: #bcc6d6;
+	border: none;
+}
+
+.cerrar:hover {
+	border: 1px solid #000;
+	background-color: red;
+	color: #fff;
+}
+
+#texto-alert{
+	padding-top: 35px;
+	width: 200px;
+	margin: auto;
+}

@@ -1,3 +1,4 @@
+document.getElementById('alert').style.visibility = "hidden";
 
 function reloj() {
   let hoy = new Date();
